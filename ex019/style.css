@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*
+id = # (so pode um elemento por doc com o msm id)
+class = . (infinitamente)
+
+*/
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial;
+}
+h1 { 
+    color: rgb(6, 90, 59);
+}
+h1#principal {
+    text-align: center;
+    background-color: rgb(4, 109, 71);
+    color: white;
+    padding: 5px;
+}
+h2 { 
+    color: rgb(73, 109, 71);
+}
+.basico { 
+    color: rgb(53, 172, 53);
+}
+.intermediario {
+    color: rgb(230, 182, 28);
+}
+.avancado {
+    color: rgb(209, 75, 75);
+}
+.destaque { 
+    background-color: aliceblue;
+}
+p { 
+    text-indent: 15px;
+}

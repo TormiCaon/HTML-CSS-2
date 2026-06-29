@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5 </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir essa imagem em vários dispostivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML 5</p>
+    <audio controls preload="metadata" loop> <!--é ideal converter pra vários arquivos e fazer várias sources, mas eu sou preguiçoso demais pra isso, também vale pros videos e pras imagens-->
+        <source src="midia/think.m4a">
+        <p>Seu navegador não consegue reproduzir esse áudio, clique <a href="midia/think.m4a">aqui</a> pra fazer o download dele </p>
+    </audio>
+</body>
+</html>

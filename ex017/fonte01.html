@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: Work Sans;
+            /*
+            --------------------
+            medidas absolutas:
+            cm, mn, in, >px<, pt, pc
+            --------------------
+            medidas relativas:
+            >em<, ex, rem, vw, vh, % 
+            --------------------
+            notas:
+            1-essas destacadas sao as recomendadas
+            2-16px geralmente = 1em*/
+
+            font-size: 16pt;
+
+            /*lighter, normal. bold, bolder*/
+            /*ou numero,do 100 ao 900*/
+        }
+        h1 {
+            font: italic bolder 3em work sans;
+
+            /*shorthand: font
+            ordem: style>weight>size>family*/
+        }
+        h2 {
+            font: bold 2em work sans
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes </h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit neque dolorum at explicabo totam, iure eaque hic quam tempore consequuntur, officiis iusto modi blanditiis quos aperiam, excepturi dolorem sequi expedita? Sunt reprehenderit aperiam commodi quaerat accusamus molestiae necessitatibus ipsam ullam explicabo pariatur provident tempore tenetur perferendis nisi natus totam minima itaque, et beatae. Magni, accusantium. Alias ullam minima magnam laboriosam, voluptate omnis doloremque optio, recusandae quas iste, quos ratione<p>
+    <h2>Subtítulo de exemplo</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa labore alias voluptatem earum veritatis laudantium tempora ad id quis quaerat ducimus inventore neque fugiat unde assumenda maiores deserunt, accusantium eos?</p>
+</body>
+</html>

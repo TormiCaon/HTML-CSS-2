@@ -6,39 +6,91 @@
     <title>Grouping Tags</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
+       body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: rgb(70, 104, 134)
+       }
+       header { 
+        text-align: center;
+        color: white;
+        margin: auto;
+       }
+       header > h1 { 
+        font-size: 40px;
+        text-shadow: 2px 2px 2px black;
+       } 
+       nav > a {
+        background-color: rgb(255, 255, 255);
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid black;
+        color: rgb(65, 168, 168);
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        margin: 5px;
+       }
+       footer > p > a { 
+        color: rgb(0, 0, 255);
+        text-decoration: none;
+        font-weight: bolder;
+       }
+       a:hover {
+        color: rgb(21, 226, 226);
+       }
+       nav { 
+        margin: auto;
+       }
+       main{ 
+        background-color: white;
+        border: 1px solid black;
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+       }
+       footer { 
+        background-color: aliceblue;
+        border:1px solid black;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 30px;
+        padding: 5px;
+        border-radius: 10px;
+       }
+       main, footer {
+        box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.61);
+       }
     </style>
 </head>
 <body>
-   <header>
-     <h1>Meu site</h1>
-      <nav>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-      </nav>
-   </header>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Participe</a>
+            <a href="#">Propostas</a>
+            <a href="#">Projetos</a>
+            <a href="#">Quem somos?</a>
+        </nav>
+    </header>
     <main>
-     <section id="assuntos">
-
-     </section>
-
-     <section id="noticias">
-      <article>
-        <h2>Brasil 3x1 Japão</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptate accusamus blanditiis ducimus explicabo nemo, adipisci sint tenetur ad nam voluptates iure vero temporibus atque quidem nesciunt perferendis minus modi?</p>
-       <aside><p>Artigo escrito por Alice</p></aside>
-      </article>
-      <article>
-
-      </article>
-
-     </section>
+        <section id="assuntos"></section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptate accusamus blanditiis ducimus explicabo nemo, adipisci sint tenetur ad nam voluptates iure vero temporibus atque quidem nesciunt perferendis minus modi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat iure sed placeat eligendi accusantium error! Adipisci sint nostrum, assumenda temporibus voluptatibus, blanditiis aperiam impedit debitis quae itaque, deleniti nemo illum?</p>
+                <aside>
+                    <p>Artigo escrito por Alice</p>
+                </aside>
+            </article>
+            <article></article>
+        </section>
     </main>
     <footer>
-     <p>Desenvolvido pelo CursoemVideo</p>
+        <p>Desenvolvido pelo <a href="#">CursoemVideo</a></p>
     </footer>
 </body>
 </html>

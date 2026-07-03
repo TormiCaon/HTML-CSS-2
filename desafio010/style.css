@@ -31,6 +31,7 @@ nav > a {
     color: white;
     text-decoration: none;
     padding: 4px;
+    margin: 5px;
 }
 
 nav > a:hover {
@@ -52,7 +53,6 @@ div#conteudo {
     margin-bottom: 10px;
     border-radius: 10px;
     max-width: 800px;
-    min-width: 600px;
 }
 
 dfn { 

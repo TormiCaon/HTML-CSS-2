@@ -59,6 +59,8 @@ nav > a {
     text-decoration: none;
     padding: 4px;
     flex-wrap: wrap;
+    border-radius: 5px;
+    transition-duration: 0.175s;
 }
 
 nav > a:hover {
@@ -117,13 +119,16 @@ img {
     max-width: 100%;
     margin: auto;
 }
-aside > p > a, footer > a {
+aside a, footer > a {
     color: white;
 }
-aside > p > a:hover { 
+aside a:hover { 
     color: rgba(219, 255, 240, 0.918);
 }
 a[href^="http"]::after {
     content: " ↗";
     font-size: 0.8em;
+}
+p { 
+    text-indent: 20px;
 }

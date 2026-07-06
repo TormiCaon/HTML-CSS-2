@@ -4,17 +4,32 @@
 
 * {
     box-sizing: border-box;
+}
 
+:root { 
+    --corheader: rgb(0, 239, 135);
+    --cornav: rgb(46, 180, 115);
+    --corfundo: rgb(151, 197, 177);
+
+}
+
+a { 
+   color: var(--corheader);
+   font-weight: bold;
+
+}
+a:hover {
+   color: rgb(138, 255, 204);
 }
 
 body {
     margin: 0;
-    background-color: rgb(151, 197, 177);
+    background-color: var(--corfundo);
     overflow-x: hidden;
 }
 
 header {
-    background-color: rgb(0, 239, 135);
+    background-color: var(--corheader);
     padding: 20px;
     text-align: center;
     border-radius: 5px;
@@ -22,7 +37,7 @@ header {
 
 header > h1{
     color: white;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 header > p { 
@@ -39,16 +54,16 @@ nav {
 
 nav > a {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(46, 180, 115);
+    background-color: var(--cornav);
     color: white;
     text-decoration: none;
     padding: 4px;
-    margin: 5px;
     flex-wrap: wrap;
 }
 
 nav > a:hover {
     background-color: rgb(96, 194, 146);
+    color: white;
 }
 
 h1, h2 {
@@ -60,13 +75,13 @@ p, li {
 }
 
 div#conteudo {
-    background-color: rgb(238, 255, 248);
+    background-color: white;
     padding: 20px;
     margin: 0 auto;
     margin-bottom: 10px;
     border-radius: 10px;
-    max-width: 800px;
-    min-width: 320px
+    max-width: 650px;
+    min-width: 320px;
 }
 
 dfn { 
@@ -75,7 +90,7 @@ dfn {
 }
 
 iframe { 
-   position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;;
+   position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
 }
 
 div#iframe { 
@@ -89,7 +104,7 @@ aside {
     border-radius: 10px;
 }
 footer { 
-    background-color: rgb(0, 239, 135);
+    background-color: var(--corheader);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
     padding: 5px;
@@ -100,5 +115,15 @@ img {
     height: auto;
     display: block;
     max-width: 100%;
-    object-fit: cover;
+    margin: auto;
+}
+aside > p > a, footer > a {
+    color: white;
+}
+aside > p > a:hover { 
+    color: rgba(219, 255, 240, 0.918);
+}
+a[href^="http"]::after {
+    content: " ↗";
+    font-size: 0.8em;
 }
